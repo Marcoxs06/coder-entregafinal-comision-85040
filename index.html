@@ -3,25 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Velour</title>
+    <meta name="description" content="Velour - Joyería de lujo con diseños exclusivos y elegantes. Descubre nuestra colección de anillos, colgantes y aros para realzar tu estilo.">
+    <meta name="keywords" content="joyería de lujo, anillos, colgantes, aros, diseños exclusivos, Velour">
+    <meta name="author" content="Marcos Ponce">
+    <meta property="og:title" content="Velour - Joyería de lujo">
+    <meta property="og:description" content="Descubre la elegancia y exclusividad de Velour. Explora nuestra colección de joyería de lujo con diseños únicos.">
+    
+
 </head>
-<body>
 
-<header class="header">
-    <nav class="nav">
-        <h1 class="nav__logo">Velour</h1>
+<body class="body">
 
-        <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="index.html">Inicio</a></li>
-            <li class="nav__item"><a class="nav__link" href="./pages/novedades.html">Novedades</a></li>
-            <li class="nav__item"><a class="nav__link" href="./pages/anillos.html">Anillos</a></li>
-            <li class="nav__item"><a class="nav__link" href="./pages/colgantes.html">Colgantes</a></li>
-            <li class="nav__item"><a class="nav__link" href="./pages/aros.html">Aros</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-md navbar-light nav-main ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand nav-logo animate__animated animate__backInLeft" href="#">Velour</a>
+
+            <button class="navbar-toggler nav-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav mb-2 mb-lg-0 nav-menu">
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="./pages/novedades.html">Novedades</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="./pages/anillos.html">Anillos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="./pages/colgantes.html">Colgantes</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="./pages/aros.html">Aros</a></li>
+                </ul>
+            </div>
+
+        </div>
     </nav>
-</header>
 
 
+    <main class="main">
+
+        <section class="portada">
+            <div class="portada__gallery animate__animated  animate__backInUp">
+                <img src="./assets/anillo1.jpg" alt="Anillo elegante">
+                <img src="./assets/aros1.jpg" alt="Aros">
+                <img src="./assets/set1.webp" alt="Collar y set">
+            </div>
+        </section>
+
+
+        <section class="lux">
+
+            <h2 class="lux__title">Esencia de lujo</h2>
+
+            <div class="lux__row">
+
+                <div class="lux__text">
+                    <h3 class="lux__subtitle">Elegancia Atemporal y Exclusividad en detalles</h3>
+
+                    <p>
+                        En el mundo de la alta joyería, cada pieza encierra una historia de lujo,
+                        distinción y perfección. Nuestra marca celebra tradición y modernidad
+                        ofreciendo belleza que perdura.
+                    </p>
+
+                    <p>
+                        Cada diseño combina materiales preciosos, técnicas artesanales y un estilo único.
+                        Desde collares hasta anillos exclusivos que transmiten pureza y esplendor.
+                    </p>
+
+                    <button class="btn-main">Comprar ahora</button>
+                </div>
+
+                <div class="lux__img">
+                    <img src="./assets/a375b3059314ee25f80a65e29dec5e87bddb5ff0.jpg" alt="Joya destacada">
+                </div>
+
+            </div>
+
+
+            <div class="lux__box">
+
+                <div class="lux__box-img">
+                    <img src="./assets/b7add56d7cd7735ef32da4c6b39ab0643bedf97f.webp" alt="Pieza destacada">
+                </div>
+
+                <div class="lux__box-info">
+
+                    <h3>Pieza destacada</h3>
+                    <h4>Collar “Eterna Aurora”</h4>
+
+                    <p>
+                        Una joya de edición limitada, diseñada para quienes buscan un estilo incomparable.
+                        Materiales de alta pureza y un diseño moderno que captura la luz desde todos los ángulos.
+                    </p>
+
+                    <button class="btn-main">Saber más</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <p class="footer__text">© 2024 Velour. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

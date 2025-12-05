@@ -1,0 +1,13 @@
+@use "variables" as v;
+
+.page-title {
+  font-family: v.$fuente-titulos;
+  font-size: 3rem;
+  font-style: italic;
+  color: v.$color-secundario;
+  text-align: center;
+  
+  max-height: 80px;
+  overflow: hidden;
+
+}

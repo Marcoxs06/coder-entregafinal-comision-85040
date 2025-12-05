@@ -1,0 +1,16 @@
+@use "variables";
+@use "novedades";
+@use "home";
+@use "header";
+@use "footer";
+@use "colgantes";
+@use "aros";
+@use "anillos";
+
+
+
+.body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}

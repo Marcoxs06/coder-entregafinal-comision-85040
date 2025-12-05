@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+.nav-main {
+  background-color: v.$color-principal;
+}
+
+.nav-logo {
+  font-family: v.$fuente-titulos;
+  font-size: 3.6rem;
+  font-style: italic;
+  color: v.$color-secundario !important;
+  padding-left: 55px;
+}
+
+.nav-link {
+  font-family: v.$fuente-titulos;
+  color: v.$color-secundario !important;
+  font-size: 1.4rem;
+  margin-inline: 18px;
+  font-weight: 500;
+
+  &:hover {
+    color: rgb(121, 62, 18) !important;
+  }
+}
+
+
+
+

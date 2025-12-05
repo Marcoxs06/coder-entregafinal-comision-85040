@@ -1,0 +1,147 @@
+@use "variables" as v;
+
+
+.portada {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.portada__gallery {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.portada__gallery img {
+  width: 280px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 4px solid #9465ab2e;
+}
+
+@media (max-width: 576px) {
+  .portada__gallery img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+
+
+.lux {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+
+  .lux__title {
+    text-align: center;
+    font-family: v.$fuente-titulos;
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+
+
+  .lux__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+
+    .lux__text {
+      flex: 1;
+      min-width: 280px;
+
+      .lux__subtitle {
+        font-family: v.$fuente-titulos;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 12px;
+        line-height: 1.5;
+      }
+
+      .btn-main {
+        @include v.boton-estilo;
+        margin-top: 10px;
+      }
+    }
+
+    .lux__img {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        max-width: 380px;
+        border-radius: 6px;
+      }
+    }
+  }
+
+
+  .lux__box {
+    background-color: #f4ece6;
+    padding: 30px;
+    border-radius: 12px;
+
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .lux__box-img {
+      flex: 1;
+      min-width: 260px;
+
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+
+    .lux__box-info {
+      flex: 1;
+      min-width: 260px;
+
+      h3 {
+        font-family: v.$fuente-titulos;
+        font-size: 1.4rem;
+      }
+
+      h4 {
+        margin-top: 5px;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 14px 0;
+        line-height: 1.5;
+      }
+
+      .btn-main {
+        @include v.boton-estilo;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .lux__row,
+  .lux__box {
+    flex-direction: column;
+    text-align: center;
+    img {
+      margin: auto;
+    }
+  }
+}

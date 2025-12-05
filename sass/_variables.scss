@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+
+$fuente-titulos: 'Baskervville', serif;
+
+$color-principal: #E7D9C8;
+$color-secundario: #0c032e;
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin boton-estilo {
+  background-color: $color-secundario;
+  border: 2px solid $color-principal;
+  border-radius: 8px;
+  color: $color-principal;
+  padding: 10px 20px;
+  font-family: $fuente-titulos;
+
+  &:hover {
+    background-color: $color-principal;
+    color: $color-secundario;
+  }
+}
+@mixin sombra-caja {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+

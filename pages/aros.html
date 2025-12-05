@@ -1,27 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velour</title>
+          <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Aros | Velour</title>
+    <meta name="description" content="Explora nuestra colección de aros en Velour. Diseños modernos y sofisticados para complementar tu estilo único.">
+    <meta name="keywords" content="aros joyería, aros modernos, joyería de lujo, Velour">
+    <meta name="author" content="Marcos Ponce">
+    <meta property="og:title" content="Aros | Velour - Joyería de lujo">
 </head>
-<body>
 
-<header class="header">
-    <nav class="nav">
-        <h1 class="nav__logo">Velour</h1>
+<body class="body">
 
-        <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
-            <li class="nav__item"><a class="nav__link" href="novedades.html">Novedades</a></li>
-            <li class="nav__item"><a class="nav__link" href="anillos.html">Anillos</a></li>
-            <li class="nav__item"><a class="nav__link" href="colgantes.html">Colgantes</a></li>
-            <li class="nav__item"><a class="nav__link" href="aros.html">Aros</a></li>
-        </ul>
-    </nav>
-</header>
+<nav class="navbar navbar-expand-md navbar-light nav-main">
+  <div class="container-fluid">
+    <a class="navbar-brand nav-logo animate__animated animate__backInLeft" href="../index.html">Velour</a>
 
+    <button class="navbar-toggler nav-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0 nav-menu">
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="novedades.html">Novedades</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="anillos.html">Anillos</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="colgantes.html">Colgantes</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom active" href="aros.html">Aros</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
+<main class="container py-5">
+
+    <header class="text-center mb-5">
+        <h1 class="page-title">Aros</h1>
+        <p class="page-subtitle">Brillo único para cada ocasión.</p>
+    </header>
+
+    <div class="row g-4">
+
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card product-card shadow-sm h-100">
+                <img src="../assets/pend.webp" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Crystal Drop</h5>
+                    <button class="btn-main">Ver más</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card product-card shadow-sm h-100">
+                <img src="../assets/descarga.webp" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Silver Ring</h5>
+                    <button class="btn-main">Ver más</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card product-card shadow-sm h-100">
+                <img src="../assets/aros1.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mini Glow</h5>
+                    <button class="btn-main">Ver más</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="footer">
+    <p class="footer__text">© 2024 Velour. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
